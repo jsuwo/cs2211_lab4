@@ -18,7 +18,7 @@ all: strarr
 strarr: main.o string_helper.o
 	gcc -o strarr main.o string_helper.o
 
-main.o: main.c string_helper.h
+main.o: main.c boolean.h string_helper.h
 	gcc -c main.c
 
 string_helper.o: string_helper.c string_helper.h
